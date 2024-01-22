@@ -87,25 +87,27 @@ public enum LeadingListData {
             )
         case .titleIcon(let title, let leadingIconName):
             return AnyView(HStack {
-                Image(leadingIconName, bundle: PhoenixSwiftUIKitResources.bundle)
+                Image(leadingIconName, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
                     .foregroundColor(.polarisColors.iconPrimary)
                     .padding(.leading, 16)
+                    .padding(.trailing,8)
+                   
                 Text(title)
                     .textStyle(.body2.regular.textPrimary)
                 Spacer()
             })
         case .titleSmallIconSubtitle(let title, let subtitle, let leadingIconName):
             return AnyView(HStack(alignment: .top) {
-                Image(leadingIconName, bundle: PhoenixSwiftUIKitResources.bundle)
+                Image(leadingIconName, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 24, height: 24)
                     .foregroundColor(.polarisColors.iconPrimary)
-                    .padding(.leading, 16)
-                    .padding(.trailing, 8)
+                    .padding(.leading, 20)
+                    .padding(.trailing, 12)
                 VStack(alignment: .leading) {
                     Text(title)
                         .textStyle(.body2.regular.textPrimary)
@@ -118,12 +120,13 @@ public enum LeadingListData {
             
         case .titleBigIconSubtitle(let title, let subtitle, let leadingIconName):
             return AnyView(HStack {
-                Image(leadingIconName, bundle: PhoenixSwiftUIKitResources.bundle)
+                Image(leadingIconName, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
                     .foregroundColor(.polarisColors.iconPrimary)
                     .padding(.leading, 16)
+                    .padding(.trailing, 8)
                 VStack(alignment: .leading) {
                     Text(title)
                         .textStyle(.body2.regular.textPrimary)
@@ -149,24 +152,30 @@ public enum LeadingListData {
             
         case .radioTitleSubtitle(let title, let subtitle, let isChecked):
             return AnyView(
-                HStack(alignment: .top) {
-                    Image(isChecked.wrappedValue ? DexIcons.icons.controls.icoRadioActive : DexIcons.icons.controls.icoRadioInactive, bundle: PhoenixSwiftUIKitResources.bundle)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 32, height: 32)
-                        .foregroundColor(isChecked.wrappedValue ? .polarisColors.iconTertiary : .polarisColors.iconPrimary)
-                        .padding(.leading, 16)
-                        .padding(.trailing, 8)
-                        .padding(.top, -10)
+                HStack(alignment: .top,spacing: 8) {
+                    VStack {
+                        Image(isChecked.wrappedValue ? DexIcons.icons.controls.icoRadioActive : DexIcons.icons.controls.icoRadioInactive, bundle: PhoenixSwiftUIKitResources)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 32, height: 32)
+                            .foregroundColor(isChecked.wrappedValue ? .polarisColors.iconTertiary : .polarisColors.iconPrimary)
+                            .padding(.bottom,15.7)
+                            .padding(.leading,16)
+                        
+                      }
+                    .frame(maxHeight: 72)
                     VStack(alignment: .leading) {
                         Text(title)
                             .textStyle(.body2.regular.textPrimary)
                         Text(subtitle)
                             .textStyle(.body3.regular.textSecondary)
+                      
                     }
                     .frame(maxHeight: 72)
                     Spacer()
                 }
+                .frame(maxHeight: 72)
+                
             )
         }
     }

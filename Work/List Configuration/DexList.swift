@@ -31,7 +31,7 @@ public struct DexList: View {
     
     public init(leadingListData: LeadingListData,
                 trailingListData: TrailingListData? = nil,
-                dexItemType: DexItemType = .primary, padding: EdgeInsets = EdgeInsets(top: 0, leading: 20, bottom: 10, trailing: 20),
+                dexItemType: DexItemType = .primary, padding: EdgeInsets = EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20),
                 disabled: Bool = false, onClick: @escaping () -> Void) {
         
         self.leadingListData = leadingListData
@@ -199,7 +199,7 @@ private struct DexSection: View {
     
     var body: some View {
         if(sectionType == DexSectionType.primary) {
-            VStack {
+            VStack(spacing:0){
                 ForEach(0..<items.count, id: \.self) { index in
                     items[index]
                     if(index != items.count - 1) {
@@ -213,7 +213,7 @@ private struct DexSection: View {
             .setShadowElevation(elevation: .elevation2)
             .padding(padding)
         } else {
-            VStack {
+            VStack(spacing:0) {
                 ForEach(0..<items.count, id: \.self) { index in
                     items[index]
                     Divider()
@@ -221,7 +221,7 @@ private struct DexSection: View {
                 }
             }
             .background(Color.white)
-            .cornerRadius(12)
+             .cornerRadius(12)
             .overlay(
                 RoundedRectangle(cornerRadius: 12, style: .continuous)
                     .strokeBorder(Color.polarisColors.borderPrimary, lineWidth: 1)

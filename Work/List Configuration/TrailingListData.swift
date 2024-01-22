@@ -11,16 +11,8 @@ import SwiftUI
 
 public enum TrailingListData {
     
-    /// Creates a trailing details with badge
-    /// `content` parameter. This represent the text of the view
-    ///  `count` parameter. This is number of count that appers on the badge
-    ///  `badgeColor` parameter. This is use to set an optional color
     case detailBadge(content: String, count: Int, badgeColor: Color? = nil)
     
-    /// Creates a trailing details with icon
-    /// `content` parameter. This represent the text of the view
-    ///  `trailingIconName` parameter. This is use to set the view icon/image
-    ///  `trailingIconTint` parameter. This is use to set the tint color of the icon/image
     case detailIcon(content: String, trailingIconName: String)
     
     case detailSmallIcon(content: String, trailingIconName: String)
@@ -66,7 +58,7 @@ public enum TrailingListData {
                         .foregroundColor(.white)
                 }
                 .padding(.leading, 8)
-                .padding(.trailing, 16)
+                .padding(.trailing, 12)
             }
             .anyView()
             
@@ -75,12 +67,12 @@ public enum TrailingListData {
                 Text(content)
                     .textStyle(.body2.regular.textSecondary)
                     .padding(.leading, 8)
-                Image(trailingIconName, bundle: PhoenixSwiftUIKitResources.bundle)
+                Image(trailingIconName, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
                     .foregroundColor(.polarisColors.iconSecondary)
-                    .padding(.trailing, 16)
+                    .padding(.trailing, 12)
             }
             .anyView()
             
@@ -89,12 +81,12 @@ public enum TrailingListData {
                 Text(content)
                     .textStyle(.body2.regular.textSecondary)
                     .padding(.leading, 8)
-                Image(trailingIconName, bundle: PhoenixSwiftUIKitResources.bundle)
+                Image(trailingIconName, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 24, height: 24)
                     .foregroundColor(.polarisColors.iconSecondary)
-                    .padding(.trailing, 16)
+                    .padding(.trailing, 12)
             }
             .anyView()
             
@@ -102,12 +94,12 @@ public enum TrailingListData {
             return HStack {
                 Text(content)
                     .textStyle(.body2.regular.textSecondary)
-                Image(DexIcons.icons.controls.icoChevronFw, bundle: PhoenixSwiftUIKitResources.bundle)
+                Image(DexIcons.icons.controls.icoChevronFw, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
                     .foregroundColor(.polarisColors.iconSecondary)
-                    .padding(.trailing, 8)
+                    .padding(.trailing, 12)
             }
             .anyView()
             
@@ -116,7 +108,7 @@ public enum TrailingListData {
                 Text(content)
                     .textStyle(.body2.regular.textSecondary)
                     .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding(.trailing, 8)
+                    .padding(.trailing, 12)
             }
             .padding(.trailing, 16)
             .anyView()
@@ -130,31 +122,30 @@ public enum TrailingListData {
                     Text(String(count))
                         .foregroundColor(.white)
                 }
-                Image(trailingIconName, bundle: PhoenixSwiftUIKitResources.bundle)
+                Image(trailingIconName)
                                   .resizable()
                                   .scaledToFit()
                                   .frame(width: 32, height: 32)
                     .foregroundColor(trailingIconTint)
-                    .padding(.trailing, 8)
+                    .padding(.trailing, 12)
             }
             .anyView()
             // This can be using for chevron forward, upward and downward as well
         case .icon(let trailingIconName, let trailingIconTint):
             return HStack {
-                Image(trailingIconName, bundle: PhoenixSwiftUIKitResources.bundle)
+                Image(trailingIconName, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
                     .foregroundColor(trailingIconTint)
-                    .padding(.trailing, 16)
+                    .padding(.trailing, 12)
             }
             .anyView()
             
         case .numberUnit(let number):
-            return HStack {
+            return HStack(spacing:3) {
                 Text(String(number))
                     .textStyle(.body2.semibold.textPrimary)
-                    .padding(.trailing, -3)
                 Text("u")
                     .textStyle(.body2.regular.textSecondary)
                     .padding(.trailing, 12)
@@ -162,18 +153,20 @@ public enum TrailingListData {
             .anyView()
             
         case .numberUnitIcon(let number, let trailingIconName, let trailingIconTint):
-            return HStack {
+            return HStack(spacing:5) {
+                HStack(spacing:3) {
                 Text(String(number))
                     .textStyle(.body2.semibold.textPrimary)
-                    .padding(.trailing, -3)
+                
                 Text("u")
-                .textStyle(.body2.regular.textSecondary)
-                Image(trailingIconName, bundle: PhoenixSwiftUIKitResources.bundle)
+                    .textStyle(.body2.regular.textSecondary)
+               }
+                Image(trailingIconName, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32)
                     .foregroundColor(trailingIconTint)
-                    .padding(.trailing, 8)
+                    .padding(.trailing, 12)
             }
             .anyView()
         }
@@ -189,7 +182,7 @@ struct TrailingListDataDemo: View {
 
 public struct TrailingListDataDemo_Previews: PreviewProvider {
     public static var previews: some View {
-        TrailingListDataDemo(trailingListData: .numberUnit(number: 8.0))
+        TrailingListDataDemo(trailingListData: .numberUnitIcon(number: 8.0, trailingIconName: "ico_chevron_fw", trailingIconTint: .backgroundPrimary))
     }
 }
 

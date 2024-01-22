@@ -4,7 +4,7 @@
 
 import UIKit
 import SwiftUI
-
+let PhoenixSwiftUIKitResources =  Bundle.main
 /**
 * This is supposed to be used in the remaining UIKit parts.
 */
@@ -279,200 +279,200 @@ public extension ShapeStyle where Self == Color {
 
 public extension Color {
     static let polarisColors = Color.PolarisDesignColorTokensSwiftUI()
-    static let transparent = Color(.displayP3, white: 0, opacity: 0)
+    static let transparents = Color(.displayP3, white: 0, opacity: 0)
 
     struct PolarisDesignColorTokensSwiftUI {
         /// Light: [dexGray200 / #EEEDED]
         /// Dark: [dexGray900 / #0F1214]
-        public let backgroundPrimary = Color(ColorNames.backgroundPrimary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let backgroundPrimary = Color(ColorNames.backgroundPrimary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray0 / #FFFFFF]
         /// Dark: [dexGray850 / #161A1D]
-        public let backgroundSecondary = Color(ColorNames.backgroundSecondary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let backgroundSecondary = Color(ColorNames.backgroundSecondary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray300 / #CECDCC]
         /// Dark: [dexGray700 / #293038]
-        public let borderPrimary = Color(ColorNames.borderPrimary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let borderPrimary = Color(ColorNames.borderPrimary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGreen500 / #137D00]
         /// Dark: [dexGreen400 / #32AD10]
-        public let borderAccent1 = Color(ColorNames.borderAccent1, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let borderAccent1 = Color(ColorNames.borderAccent1, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexYellow400 / #FFCC3D]
         /// Dark: [dexGray1000 / #000000]
-        public let borderHigh = Color(ColorNames.borderHigh, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let borderHigh = Color(ColorNames.borderHigh, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexRed400 / #F73D45]
         /// Dark: [dexGray1000 / #000000]
-        public let borderLow = Color(ColorNames.borderLow, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let borderLow = Color(ColorNames.borderLow, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray0 / #FFFFFF]
         /// Dark: [dexGray1000 / #000000]
-        public let borderNormal = Color(ColorNames.borderNormal, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let borderNormal = Color(ColorNames.borderNormal, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray800 / #1A1E23]
         /// Dark: [dexGray0 / #FFFFFF]
-        public let borderPrimaryVariant = Color(ColorNames.borderPrimaryVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let borderPrimaryVariant = Color(ColorNames.borderPrimaryVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexTeal500 / #017B85]
         /// Dark: [dexTeal400 / #2DAAB4]
-        public let eventsDefault = Color(ColorNames.eventsDefault, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let eventsDefault = Color(ColorNames.eventsDefault, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexMarine500 / #005C9C]
         /// Dark: [dexMarine400 / #62A0CC]
-        public let eventsLong = Color(ColorNames.eventsLong, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let eventsLong = Color(ColorNames.eventsLong, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexPurple500 / #620C6E]
         /// Dark: [dexPurple400 / #C183D3]
-        public let eventsShort = Color(ColorNames.eventsShort, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let eventsShort = Color(ColorNames.eventsShort, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray800 / #1A1E23]
         /// Dark: [dexGray200 / #EEEDED]
-        public let iconPrimary = Color(ColorNames.iconPrimary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let iconPrimary = Color(ColorNames.iconPrimary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray800 / #1A1E23]
         /// Dark: [dexYellow300 / #FFD04D]
-        public let iconPrimaryVariant = Color(ColorNames.iconPrimaryVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let iconPrimaryVariant = Color(ColorNames.iconPrimaryVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray0 / #FFFFFF]
         /// Dark: [dexRed300 / #F84A51]
-        public let iconPrimaryInverseVariant = Color(ColorNames.iconPrimaryInverseVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let iconPrimaryInverseVariant = Color(ColorNames.iconPrimaryInverseVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray500 / #5E6D7E]
         /// Dark: [dexGray400 / #848E9B]
-        public let iconSecondary = Color(ColorNames.iconSecondary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let iconSecondary = Color(ColorNames.iconSecondary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGreen500 / #137D00]
         /// Dark: [dexGreen400 / #32AD10]
-        public let iconTertiary = Color(ColorNames.iconTertiary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let iconTertiary = Color(ColorNames.iconTertiary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray0 / #FFFFFF]
         /// Dark: [dexGray850 / #161A1D]
-        public let iconPrimaryInverse = Color(ColorNames.iconPrimaryInverse, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let iconPrimaryInverse = Color(ColorNames.iconPrimaryInverse, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray600 / #3F4955]
         /// Dark: [dexGray350 / #B8BABC]
-        public let interactivePrimary = Color(ColorNames.interactivePrimary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactivePrimary = Color(ColorNames.interactivePrimary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray500 / #5E6D7E]
         /// Dark: [dexGray250 / #DCDBDA]
-        public let interactivePrimaryVariant1 = Color(ColorNames.interactivePrimaryVariant1, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactivePrimaryVariant1 = Color(ColorNames.interactivePrimaryVariant1, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray0 / #FFFFFF]
         /// Dark: [dexGray750 / #23282F]
-        public let interactivePrimaryInverse = Color(ColorNames.interactivePrimaryInverse, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactivePrimaryInverse = Color(ColorNames.interactivePrimaryInverse, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray200 / #EEEDED]
         /// Dark: [dexGray750 / #23282F]
-        public let interactiveSecondary = Color(ColorNames.interactiveSecondary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactiveSecondary = Color(ColorNames.interactiveSecondary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray250 / #DCDBDA]
         /// Dark: [dexGray650 / #343C46]
-        public let interactiveSecondaryVariant1 = Color(ColorNames.interactiveSecondaryVariant1, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactiveSecondaryVariant1 = Color(ColorNames.interactiveSecondaryVariant1, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray500 / #5E6D7E]
         /// Dark: [dexGray400 / #848E9B]
-        public let interactiveTertiary = Color(ColorNames.interactiveTertiary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactiveTertiary = Color(ColorNames.interactiveTertiary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray400 / #848E9B]
         /// Dark: [dexGray300 / #CECDCC]
-        public let interactiveTertiaryVariant1 = Color(ColorNames.interactiveTertiaryVariant1, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactiveTertiaryVariant1 = Color(ColorNames.interactiveTertiaryVariant1, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGreen500 / #137D00]
         /// Dark: [dexGreen400 / #32AD10]
-        public let interactiveAccent1 = Color(ColorNames.interactiveAccent1, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactiveAccent1 = Color(ColorNames.interactiveAccent1, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGreen400 / #32AD10]
         /// Dark: [dexGreen300 / #65DD46]
-        public let interactiveAccent2 = Color(ColorNames.interactiveAccent2, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactiveAccent2 = Color(ColorNames.interactiveAccent2, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGreen400 / #32AD10]
         /// Dark: [dexGreen500 / #137D00]
-        public let interactiveAccent2Variant1 = Color(ColorNames.interactiveAccent2Variant1, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactiveAccent2Variant1 = Color(ColorNames.interactiveAccent2Variant1, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexRed500 / #D5272F]
         /// Dark: [dexRed400 / #F73D45]
-        public let interactiveDestructive = Color(ColorNames.interactiveDestructive, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactiveDestructive = Color(ColorNames.interactiveDestructive, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexRed400 / #F73D45]
         /// Dark: [dexRed300 / #F84A51]
-        public let interactiveDestructiveVariant1 = Color(ColorNames.interactiveDestructiveVariant1, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let interactiveDestructiveVariant1 = Color(ColorNames.interactiveDestructiveVariant1, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexRed400 / #F73D45]
         /// Dark: [dexRed300 / #F84A51]
-        public let statusDanger = Color(ColorNames.statusDanger, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusDanger = Color(ColorNames.statusDanger, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexRed500 / #D5272F]
         /// Dark: [dexRed400 / #F73D45]
-        public let statusDangerVariant = Color(ColorNames.statusDangerVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusDangerVariant = Color(ColorNames.statusDangerVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexOrange500 / #E86E36]
         /// Dark: [dexOrange400 / #E67541]
-        public let statusWarning = Color(ColorNames.statusWarning, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusWarning = Color(ColorNames.statusWarning, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGreen500 / #137D00]
         /// Dark: [dexGreen400 / #32AD10]
-        public let statusSuccess = Color(ColorNames.statusSuccess, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusSuccess = Color(ColorNames.statusSuccess, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGreen400 / #32AD10]
         /// Dark: [dexGreen300 / #65DD46]
-        public let statusSucessVariant = Color(ColorNames.statusSucessVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusSucessVariant = Color(ColorNames.statusSucessVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexOrange500 / #E86E36]
         /// Dark: [dexOrange400 / #E67541]
-        public let statusVeryHigh = Color(ColorNames.statusVeryHigh, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusVeryHigh = Color(ColorNames.statusVeryHigh, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexYellow400 / #FFCC3D]
         /// Dark: [dexYellow300 / #FFD04D]
-        public let statusHigh = Color(ColorNames.statusHigh, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusHigh = Color(ColorNames.statusHigh, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexYellow400 / #FFCC3D]
         /// Dark: [dexYellow900 / #332E06]
-        public let statusHighVariant = Color(ColorNames.statusHighVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusHighVariant = Color(ColorNames.statusHighVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGreen400 / #32AD10]
         /// Dark: [dexGreen300 / #65DD46]
-        public let statusInRange = Color(ColorNames.statusInRange, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusInRange = Color(ColorNames.statusInRange, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexRed400 / #F73D45]
         /// Dark: [dexRed300 / #F84A51]
-        public let statusLow = Color(ColorNames.statusLow, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusLow = Color(ColorNames.statusLow, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexRed400 / #F73D45]
         /// Dark: [dexRed900 / #330C0A]
-        public let statusLowVariant1 = Color(ColorNames.statusLowVariant1, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusLowVariant1 = Color(ColorNames.statusLowVariant1, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexRed200 / #EF6267]
         /// Dark: [dexRed100 / #F67378]
-        public let statusLowVariant2 = Color(ColorNames.statusLowVariant2, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusLowVariant2 = Color(ColorNames.statusLowVariant2, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray0 / #FFFFFF]
         /// Dark: [dexGray850 / #161A1D]
-        public let statusNormal = Color(ColorNames.statusNormal, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusNormal = Color(ColorNames.statusNormal, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray200 / #EEEDED]
         /// Dark: [dexGray900 / #0F1214]
-        public let statusNormalVariant = Color(ColorNames.statusNormalVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusNormalVariant = Color(ColorNames.statusNormalVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexPurple400 / #C183D3]
         /// Dark: [dexPurple300 / #C183D3]
-        public let statusFast = Color(ColorNames.statusFast, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusFast = Color(ColorNames.statusFast, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexPurple500 / #620C6E]
         /// Dark: [dexPurple400 / #C183D3]
-        public let statusFastVariant = Color(ColorNames.statusFastVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusFastVariant = Color(ColorNames.statusFastVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexMarine400 / #62A0CC]
         /// Dark: [dexMarine300 / #B9CFDF]
-        public let statusLong = Color(ColorNames.statusLong, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusLong = Color(ColorNames.statusLong, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexMarine500 / #005C9C]
         /// Dark: [dexMarine400 / #62A0CC]
-        public let statusLongVariant = Color(ColorNames.statusLongVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let statusLongVariant = Color(ColorNames.statusLongVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray0 / #FFFFFF]
         /// Dark: [dexGray850 / #161A1D]
-        public let surfacePrimary = Color(ColorNames.surfacePrimary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let surfacePrimary = Color(ColorNames.surfacePrimary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray200 / #EEEDED]
         /// Dark: [dexGray900 / #0F1214]
-        public let surfaceSecondary = Color(ColorNames.surfaceSecondary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let surfaceSecondary = Color(ColorNames.surfaceSecondary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray100 / #FAFAFA]
         /// Dark: [dexGray800 / #1A1E23]
-        public let surfaceTertiary = Color(ColorNames.surfaceTertiary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let surfaceTertiary = Color(ColorNames.surfaceTertiary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray700 / #293038]
         /// Dark: [dexGray300 / #CECDCC]
-        public let surfacePrimaryInverse = Color(ColorNames.surfacePrimaryInverse, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let surfacePrimaryInverse = Color(ColorNames.surfacePrimaryInverse, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray1000 / #000000]
         /// Dark: [dexGray200 / #EEEDED]
-        public let surfaceSecondaryInverse = Color(ColorNames.surfaceSecondaryInverse, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let surfaceSecondaryInverse = Color(ColorNames.surfaceSecondaryInverse, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexApricot300 / #FDD3B7]
         /// Dark: [dexGray750 / #23282F]
-        public let surfaceDecorative1 = Color(ColorNames.surfaceDecorative1, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let surfaceDecorative1 = Color(ColorNames.surfaceDecorative1, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGreen500 / #137D00]
         /// Dark: [dexGreen400 / #32AD10]
-        public let surfaceDecorative2 = Color(ColorNames.surfaceDecorative2, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let surfaceDecorative2 = Color(ColorNames.surfaceDecorative2, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray350 / #B8BABC]
         /// Dark: [dexGray650 / #343C46]
-        public let surfaceDecorative3 = Color(ColorNames.surfaceDecorative3, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let surfaceDecorative3 = Color(ColorNames.surfaceDecorative3, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray0 / #FFFFFF]
         /// Dark: [dexGray700 / #293038]
-        public let surfacePrimaryVariant = Color(ColorNames.surfacePrimaryVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let surfacePrimaryVariant = Color(ColorNames.surfacePrimaryVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray700 / #293038]
         /// Dark: [dexGray200 / #EEEDED]
-        public let surfacePrimaryInverseVariant = Color(ColorNames.surfacePrimaryInverseVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let surfacePrimaryInverseVariant = Color(ColorNames.surfacePrimaryInverseVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray800 / #1A1E23]
         /// Dark: [dexGray200 / #EEEDED]
-        public let textPrimary = Color(ColorNames.textPrimary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let textPrimary = Color(ColorNames.textPrimary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray800 / #1A1E23]
         /// Dark: [dexYellow300 / #FFD04D]
-        public let textPrimaryVariant = Color(ColorNames.textPrimaryVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let textPrimaryVariant = Color(ColorNames.textPrimaryVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray0 / #FFFFFF]
         /// Dark: [dexRed300 / #F84A51]
-        public let textPrimaryInverseVariant = Color(ColorNames.textPrimaryInverseVariant, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let textPrimaryInverseVariant = Color(ColorNames.textPrimaryInverseVariant, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray500 / #5E6D7E]
         /// Dark: [dexGray400 / #848E9B]
-        public let textSecondary = Color(ColorNames.textSecondary, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let textSecondary = Color(ColorNames.textSecondary, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGreen500 / #137D00]
         /// Dark: [dexGreen400 / #32AD10]
-        public let textDecorative1 = Color(ColorNames.textDecorative1, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let textDecorative1 = Color(ColorNames.textDecorative1, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray0 / #FFFFFF]
         /// Dark: [dexGray850 / #161A1D]
-        public let textPrimaryInverse = Color(ColorNames.textPrimaryInverse, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let textPrimaryInverse = Color(ColorNames.textPrimaryInverse, bundle: PhoenixSwiftUIKitResources)
         /// Light: [dexGray1000 / #000000]
         /// Dark: [transparent / #FFFFFF]
-        public let elevation = Color(ColorNames.elevation, bundle: PhoenixSwiftUIKitResources.bundle)
+        public let elevation = Color(ColorNames.elevation, bundle: PhoenixSwiftUIKitResources)
     }
 }

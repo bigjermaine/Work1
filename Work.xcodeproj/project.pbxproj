@@ -11,6 +11,16 @@
 		D0D815112B57B06500B7EABA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D815102B57B06500B7EABA /* ContentView.swift */; };
 		D0D815132B57B06700B7EABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D815122B57B06700B7EABA /* Assets.xcassets */; };
 		D0D815162B57B06700B7EABA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D815152B57B06700B7EABA /* Preview Assets.xcassets */; };
+		D0D815212B57B1EE00B7EABA /* TrailingListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8151D2B57B1EE00B7EABA /* TrailingListData.swift */; };
+		D0D815222B57B1EE00B7EABA /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8151E2B57B1EE00B7EABA /* RadioButton.swift */; };
+		D0D815232B57B1EE00B7EABA /* DexList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8151F2B57B1EE00B7EABA /* DexList.swift */; };
+		D0D815242B57B1EE00B7EABA /* LeadingListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D815202B57B1EE00B7EABA /* LeadingListData.swift */; };
+		D0D815282B57BE2400B7EABA /* Polaris.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D815262B57BE2000B7EABA /* Polaris.xcassets */; };
+		D0D815292B57BE2400B7EABA /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D815272B57BE2000B7EABA /* Icons.swift */; };
+		D0D8152D2B57BFF400B7EABA /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8152B2B57BFF400B7EABA /* Typography.swift */; };
+		D0D8152E2B57BFF400B7EABA /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8152C2B57BFF400B7EABA /* ColorTheme.swift */; };
+		D0D815322B57DC4A00B7EABA /* Elevations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D815302B57DC4A00B7EABA /* Elevations.swift */; };
+		D0D815332B57DC4A00B7EABA /* ElevationsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D815312B57DC4A00B7EABA /* ElevationsUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		D0D815102B57B06500B7EABA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0D815122B57B06700B7EABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0D815152B57B06700B7EABA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0D8151D2B57B1EE00B7EABA /* TrailingListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailingListData.swift; sourceTree = "<group>"; };
+		D0D8151E2B57B1EE00B7EABA /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		D0D8151F2B57B1EE00B7EABA /* DexList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DexList.swift; sourceTree = "<group>"; };
+		D0D815202B57B1EE00B7EABA /* LeadingListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadingListData.swift; sourceTree = "<group>"; };
+		D0D815262B57BE2000B7EABA /* Polaris.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Polaris.xcassets; sourceTree = "<group>"; };
+		D0D815272B57BE2000B7EABA /* Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		D0D8152B2B57BFF400B7EABA /* Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		D0D8152C2B57BFF400B7EABA /* ColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		D0D815302B57DC4A00B7EABA /* Elevations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Elevations.swift; sourceTree = "<group>"; };
+		D0D815312B57DC4A00B7EABA /* ElevationsUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElevationsUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +73,7 @@
 			children = (
 				D0D8150E2B57B06500B7EABA /* WorkApp.swift */,
 				D0D815102B57B06500B7EABA /* ContentView.swift */,
+				D0D8151C2B57B1EE00B7EABA /* List Configuration */,
 				D0D815122B57B06700B7EABA /* Assets.xcassets */,
 				D0D815142B57B06700B7EABA /* Preview Content */,
 			);
@@ -65,6 +86,47 @@
 				D0D815152B57B06700B7EABA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0D8151C2B57B1EE00B7EABA /* List Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8152F2B57DC4A00B7EABA /* Elevation and Token */,
+				D0D8151D2B57B1EE00B7EABA /* TrailingListData.swift */,
+				D0D8151E2B57B1EE00B7EABA /* RadioButton.swift */,
+				D0D8151F2B57B1EE00B7EABA /* DexList.swift */,
+				D0D8152A2B57BFF400B7EABA /* Color and token */,
+				D0D815252B57BE2000B7EABA /* DexIcons */,
+				D0D815202B57B1EE00B7EABA /* LeadingListData.swift */,
+			);
+			path = "List Configuration";
+			sourceTree = "<group>";
+		};
+		D0D815252B57BE2000B7EABA /* DexIcons */ = {
+			isa = PBXGroup;
+			children = (
+				D0D815262B57BE2000B7EABA /* Polaris.xcassets */,
+				D0D815272B57BE2000B7EABA /* Icons.swift */,
+			);
+			path = DexIcons;
+			sourceTree = "<group>";
+		};
+		D0D8152A2B57BFF400B7EABA /* Color and token */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8152B2B57BFF400B7EABA /* Typography.swift */,
+				D0D8152C2B57BFF400B7EABA /* ColorTheme.swift */,
+			);
+			path = "Color and token";
+			sourceTree = "<group>";
+		};
+		D0D8152F2B57DC4A00B7EABA /* Elevation and Token */ = {
+			isa = PBXGroup;
+			children = (
+				D0D815302B57DC4A00B7EABA /* Elevations.swift */,
+				D0D815312B57DC4A00B7EABA /* ElevationsUI.swift */,
+			);
+			path = "Elevation and Token";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +189,7 @@
 			files = (
 				D0D815162B57B06700B7EABA /* Preview Assets.xcassets in Resources */,
 				D0D815132B57B06700B7EABA /* Assets.xcassets in Resources */,
+				D0D815282B57BE2400B7EABA /* Polaris.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +200,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D8152E2B57BFF400B7EABA /* ColorTheme.swift in Sources */,
+				D0D815292B57BE2400B7EABA /* Icons.swift in Sources */,
+				D0D815242B57B1EE00B7EABA /* LeadingListData.swift in Sources */,
+				D0D815322B57DC4A00B7EABA /* Elevations.swift in Sources */,
+				D0D8152D2B57BFF400B7EABA /* Typography.swift in Sources */,
 				D0D815112B57B06500B7EABA /* ContentView.swift in Sources */,
 				D0D8150F2B57B06500B7EABA /* WorkApp.swift in Sources */,
+				D0D815232B57B1EE00B7EABA /* DexList.swift in Sources */,
+				D0D815212B57B1EE00B7EABA /* TrailingListData.swift in Sources */,
+				D0D815332B57DC4A00B7EABA /* ElevationsUI.swift in Sources */,
+				D0D815222B57B1EE00B7EABA /* RadioButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +352,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +382,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
