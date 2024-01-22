@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "img_connected_pen_lilly_active_green.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
