@@ -61,6 +61,7 @@ public enum TrailingListData {
         
                 .padding(.trailing, 16)
             }
+          
             .anyView()
             
         case .detailIcon(let content, let trailingIconName):
@@ -74,6 +75,7 @@ public enum TrailingListData {
                     .foregroundColor(.polarisColors.iconSecondary)
                     .padding(.trailing, 16)
             }
+            .frame(height: 24)
             .anyView()
             
         case .detailSmallIcon(let content, let trailingIconName):
@@ -102,7 +104,7 @@ public enum TrailingListData {
                     .padding(.trailing, 16)
                     
             }
-            
+            .frame(height: 24)
             .anyView()
             
         case .detailToggle(let content, let isOn):
@@ -113,6 +115,7 @@ public enum TrailingListData {
                     .padding(.trailing, 8)
             }
             .padding(.trailing, 16)
+            .frame(height: 24)
             .anyView()
             
         case .badgeIcon(let count, let badgeColor, let trailingIconName, let trailingIconTint):
@@ -131,8 +134,9 @@ public enum TrailingListData {
                     .foregroundColor(trailingIconTint)
                     .padding(.trailing, 12)
             }
+            .frame(height: 24)
             .anyView()
-            // This can be using for chevron forward, upward and downward as well
+           
         case .icon(let trailingIconName, let trailingIconTint):
             return HStack {
                 Image(trailingIconName, bundle: PhoenixSwiftUIKitResources)
@@ -142,6 +146,7 @@ public enum TrailingListData {
                     .foregroundColor(trailingIconTint)
                     .padding(.trailing, 16)
             }
+            .frame(height: 24)
             .anyView()
             
         case .numberUnit(let number):
@@ -170,6 +175,7 @@ public enum TrailingListData {
                     .foregroundColor(trailingIconTint)
                     .padding(.trailing, 12)
             }
+            .frame(height: 24)
             .anyView()
         }
     }
