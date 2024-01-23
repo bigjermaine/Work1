@@ -58,7 +58,9 @@ public enum LeadingListData {
                     .padding(.leading, 16)
                 Spacer()
             }
+              
             )
+           
         case .icon(let leadingIconName):
             return AnyView(HStack {
                 Image(leadingIconName)
@@ -68,7 +70,9 @@ public enum LeadingListData {
                     .foregroundColor(.polarisColors.iconPrimary)
                     .padding(.leading, 16)
                 Spacer()
-            })
+            }
+            
+            )
         case .link(let link):
             return AnyView(HStack {
                 Text(link)
@@ -84,6 +88,7 @@ public enum LeadingListData {
                     .padding(.leading, 16)
                 Spacer()
             }
+         
             )
         case .titleIcon(let title, let leadingIconName):
             return AnyView(HStack {
@@ -98,7 +103,9 @@ public enum LeadingListData {
                 Text(title)
                     .textStyle(.body2.regular.textPrimary)
                 Spacer()
-            })
+            }
+         
+            )
         case .titleSmallIconSubtitle(let title, let subtitle, let leadingIconName):
             return AnyView(HStack(alignment: .top) {
                 Image(leadingIconName, bundle: PhoenixSwiftUIKitResources)

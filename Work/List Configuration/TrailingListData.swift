@@ -47,7 +47,7 @@ public enum TrailingListData {
     public var body: AnyView {
         switch self {
         case .detailBadge(let content, let count, let badgeColor):
-            return HStack {
+            return HStack(spacing:8){
                 Text(content)
                     .textStyle(.body2.regular.textSecondary)
                 ZStack {
@@ -56,51 +56,53 @@ public enum TrailingListData {
                         .foregroundColor(badgeColor ?? .red)
                     Text(String(count))
                         .foregroundColor(.white)
+                        .font(.caption)
                 }
-                .padding(.leading, 8)
-                .padding(.trailing, 12)
+        
+                .padding(.trailing, 16)
             }
             .anyView()
             
         case .detailIcon(let content, let trailingIconName):
-            return HStack {
+            return HStack(spacing:8){
                 Text(content)
                     .textStyle(.body2.regular.textSecondary)
-                    .padding(.leading, 8)
                 Image(trailingIconName, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 32, height: 32)
+                    .frame(width: 28, height: 28)
                     .foregroundColor(.polarisColors.iconSecondary)
-                    .padding(.trailing, 12)
+                    .padding(.trailing, 16)
             }
             .anyView()
             
         case .detailSmallIcon(let content, let trailingIconName):
-            return HStack {
+            return HStack(spacing:8) {
                 Text(content)
                     .textStyle(.body2.regular.textSecondary)
-                    .padding(.leading, 8)
+                   
                 Image(trailingIconName, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 24, height: 24)
+                    .frame(width: 20, height: 20)
                     .foregroundColor(.polarisColors.iconSecondary)
-                    .padding(.trailing, 12)
+                    .padding(.trailing, 16)
             }
             .anyView()
             
         case .detailWithChevron(let content):
-            return HStack {
+            return HStack(spacing:8) {
                 Text(content)
                     .textStyle(.body2.regular.textSecondary)
                 Image(DexIcons.icons.controls.icoChevronFw, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 32, height: 32)
+                    .frame(width: 20, height: 20)
                     .foregroundColor(.polarisColors.iconSecondary)
-                    .padding(.trailing, 12)
+                    .padding(.trailing, 16)
+                    
             }
+            
             .anyView()
             
         case .detailToggle(let content, let isOn):
@@ -108,7 +110,7 @@ public enum TrailingListData {
                 Text(content)
                     .textStyle(.body2.regular.textSecondary)
                     .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding(.trailing, 12)
+                    .padding(.trailing, 8)
             }
             .padding(.trailing, 16)
             .anyView()
@@ -136,9 +138,9 @@ public enum TrailingListData {
                 Image(trailingIconName, bundle: PhoenixSwiftUIKitResources)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 32, height: 32)
+                    .frame(width: 28, height: 28)
                     .foregroundColor(trailingIconTint)
-                    .padding(.trailing, 12)
+                    .padding(.trailing, 16)
             }
             .anyView()
             
@@ -153,7 +155,7 @@ public enum TrailingListData {
             .anyView()
             
         case .numberUnitIcon(let number, let trailingIconName, let trailingIconTint):
-            return HStack(spacing:5) {
+            return HStack(spacing:8) {
                 HStack(spacing:3) {
                 Text(String(number))
                     .textStyle(.body2.semibold.textPrimary)
